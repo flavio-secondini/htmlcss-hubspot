@@ -1,0 +1,162 @@
+/* UTILITY GENERALE */
+
+/* azzeramento body + colore standard testo */
+body {
+  padding: 0;
+  margin: 0;
+  color: #3f5465;
+}
+
+/* padding pagina */
+[class^=row-] {
+  padding: 0 22%;
+}
+
+/* floating left */
+[class^=col-] {
+  float: left;
+}
+
+/* clearfix generale */
+[class^=row-]:after {
+  display: "";
+  clear: both;
+  display: table;
+}
+
+/* bottoni bianchi */
+[class^=btn-white-] {
+  background-color: #ffffff;
+  color: #fe775a;
+  border: 1px solid #fe775a;
+  border-radius: 3px;
+}
+
+/* bottoni arancioni */
+[class^=btn-orange-] {
+  background-color: #fe775a;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+/* larghezza colonne */
+[class^=col-50-] {
+  width: 50%;
+}
+
+/* HEADER */
+
+/* navbar fixed */
+.light-green {
+  position: relative;
+}
+
+.container-gray-fixed {
+  background-color: #f4f9fd;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+/* alternativa per il centramento. abilita anche i due position absolute sottostanti e nascondi il padding */
+/* .row-fixed {
+  height: 100%;
+  position: relative;
+} */
+
+.col-50-fixed {
+  padding-top: 22px;
+  /* position: absolute;
+  top: 35%;
+  left: 20%; */
+}
+
+select.dropdown-head {
+  background-color: #f4f9fd;
+  color: #3f5465;
+  border: none;
+}
+
+span.fixed-head {
+  margin: 2%;
+  padding-left: 4%;
+  border-left: 1px solid #899397;
+}
+
+.col-50-fixed-right {
+  text-align: right;
+  padding-top: 15px;
+  /* position: absolute;
+  top: 25%;
+  right: 20%; */
+}
+
+button.btn-white-head {
+  padding: 7px;
+  margin-left: 20px;
+}
+
+button.btn-orange-head {
+  padding: 7px;
+  margin-left: 20px;
+}
+
+/* placeholder */
+.container-placeholder {
+  height: 65px;
+}
+
+/* navbar white */
+.container-white {
+  background-color: #ffffff;
+  height: 65px;
+}
+
+.col-50-navbar {
+  padding-top: 20px;
+}
+
+.col-50-navbar-right {
+  padding-top: 10px;
+
+}
+
+.navlist li {
+  list-style: none;
+  float: right;
+  padding-left: 10px;
+}
+
+.navlist select {
+  border: none;
+  color: #3f5465;
+}
+
+.navlist a {
+  text-decoration: none;
+  padding: 0 3px;
+  color: #3f5465;
+}
+
+/* jumbo */
+.light-green {
+  background-color: #afebe4;
+  height: 800px;
+}
+
+.container-jumbo {
+  background-image: url('../img/jumbotron.png');
+  height: 610px;
+}
+
+.border-top {
+  background-color: #33475b;
+  height: 3px;
+}
+
+.border-bottom {
+  background-color: #33475b;
+  height: 3px;
+}
