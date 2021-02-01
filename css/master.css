@@ -181,3 +181,68 @@ button.btn-orange-head {
   background-color: #33475b;
   height: 3px;
 }
+
+/* MAIN */
+
+/* sezione 1 */
+.container-gray-main {
+  background-color: #f4f9fd;
+  height: 1000px;
+}
+
+.col-100-gray {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.col-100-gray img {
+  height: 250px;
+  width: auto;
+}
+
+.col-100-gray h1 {
+  font-size: 32px;
+}
+
+.col-20-white {
+  width: 20%;
+  padding: 50px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.col-80-white {
+  width: calc(80% - 200px);
+  background-color: #ffffff;
+  padding: 20px 50px;
+}
+
+.col-80-white p {
+  width: 80%;
+  padding: 10px 0;
+}
+
+.col-80-white span {
+  display:inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+hr.inline-main {
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+.col-80-white ul li {
+  float: left;
+  list-style: none;
+  padding: 10px 40px 55px 0;
+}
+
+/* NOTE: dimensione di tutti i bottoni arancioni nel main */
+.btn-orange-main {
+  padding: 20px 30px;
+}
