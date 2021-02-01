@@ -143,12 +143,33 @@ button.btn-orange-head {
 /* jumbo */
 .light-green {
   background-color: #afebe4;
-  height: 800px;
+  height: 900px;
 }
-
+/* NOTE: cambiando la risoluzione dello schermo, bordi e background inferiore si disallineano */
 .container-jumbo {
   background-image: url('../img/jumbotron.png');
-  height: 610px;
+  background-size: cover;
+  background-position: right;
+  height: 700px;
+}
+
+.col-40-jumbo {
+  width: 40%;
+}
+
+.col-40-jumbo h1 {
+  font-size: 46px;
+  padding-top: 50px;
+}
+
+.btn-orange-jumbo {
+  padding: 20px 40px;
+  margin: 20px 0;
+}
+
+.paragraph-small {
+  font-size: 14px;
+  width: 60%;
 }
 
 .border-top {
