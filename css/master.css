@@ -19,7 +19,7 @@ body {
 
 /* clearfix generale */
 [class^=row-]:after {
-  display: "";
+  content: "";
   clear: both;
   display: table;
 }
@@ -40,9 +40,20 @@ body {
   border-radius: 3px;
 }
 
+/* dimensione di tutti i bottoni arancioni nel main */
+[class^=btn-orange-main-] {
+  padding: 20px 30px;
+}
+
 /* larghezza colonne */
 [class^=col-50-] {
   width: 50%;
+}
+
+/* icona checked arancione in tutta la pagina */
+li i {
+  color: #fe775a;
+  padding-right: 10px;
 }
 
 /* HEADER */
@@ -187,12 +198,12 @@ button.btn-orange-head {
 /* sezione 1 */
 .container-gray-main {
   background-color: #f4f9fd;
-  height: 1000px;
 }
 
 .col-100-gray {
   text-align: center;
   margin-top: 50px;
+  padding-bottom: 40px;
 }
 
 .col-100-gray img {
@@ -204,17 +215,24 @@ button.btn-orange-head {
   font-size: 32px;
 }
 
+/* sezione 1 - riga 2 */
+.row-white-1 {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 22%;
+  box-shadow: 0 0 1px 0 gray;
+}
+
 .col-20-white {
   width: 20%;
   padding: 50px;
   text-align: center;
-  background-color: #ffffff;
 }
 
 .col-80-white {
   width: calc(80% - 200px);
-  background-color: #ffffff;
   padding: 20px 50px;
+  position: relative;
 }
 
 .col-80-white p {
@@ -222,7 +240,8 @@ button.btn-orange-head {
   padding: 10px 0;
 }
 
-.col-80-white span {
+/* NOTE: proprietà valida sia per gli span nelle colonne della riga white 1 che in quelle della riga white 2 sottostanti */
+.col-80-white span, .col-30-white span {
   display:inline-block;
   text-transform: uppercase;
   font-weight: bold;
@@ -236,13 +255,41 @@ hr.inline-main {
   margin-left: 40px;
 }
 
+.col-80-white ul {
+  position: absolute;
+  left: 10px;
+}
+
 .col-80-white ul li {
   float: left;
   list-style: none;
-  padding: 10px 40px 55px 0;
+  padding: 10px 40px 0 0;
 }
 
-/* NOTE: dimensione di tutti i bottoni arancioni nel main */
-.btn-orange-main {
-  padding: 20px 30px;
+/* sezione 1 - riga 3 */
+.col-30-white {
+  background-color: #ffffff;
+  width: calc(30% - 40px);
+  margin: 5% 5% 5% 0;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 1px 0 gray;
+}
+
+#main-right {
+  margin: 5% 0;
+}
+
+.col-30-white hr {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.col-30-white ul li{
+  list-style: none;
+  text-align: left;
+}
+
+.col-30-white ul {
+  padding-bottom: 40px;
 }
