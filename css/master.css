@@ -42,6 +42,7 @@ body {
 
 /* dimensione di tutti i bottoni arancioni nel main */
 [class^=btn-orange-main-] {
+  margin-top: 20px;
   padding: 20px 30px;
 }
 
@@ -54,6 +55,10 @@ body {
 li i {
   color: #fe775a;
   padding-right: 10px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* HEADER */
@@ -69,6 +74,7 @@ li i {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid black;
+  z-index: 1000;
 }
 
 /* alternativa per il centramento. abilita anche i due position absolute sottostanti e nascondi il padding */
@@ -213,6 +219,7 @@ button.btn-orange-head {
 
 .col-100-gray h1 {
   font-size: 32px;
+  text-transform: capitalize;
 }
 
 /* sezione 1 - riga 2 */
@@ -225,8 +232,14 @@ button.btn-orange-head {
 
 .col-20-white {
   width: 20%;
-  padding: 50px;
+  padding: 50px 50px;
   text-align: center;
+}
+
+/* NOTE: proprietà valida sia per le immagini nelle colonne della riga white 1 che in quelle della riga white 2 sottostanti */
+.col-20-white img, .col-30-white img {
+  height: 150px;
+  width: auto;
 }
 
 .col-80-white {
@@ -280,6 +293,10 @@ hr.inline-main {
   margin: 5% 0;
 }
 
+.col-30-white h1 {
+  text-transform: capitalize;
+}
+
 .col-30-white hr {
   width: 80%;
   margin-bottom: 20px;
@@ -290,6 +307,105 @@ hr.inline-main {
   text-align: left;
 }
 
-.col-30-white ul {
-  padding-bottom: 40px;
+/* sezione 2 */
+.section-green {
+  background-image: linear-gradient(to right, #00a7bb, #00b8aa);
+  text-align: center;
+  color: #ffffff;
 }
+
+.col-100-green h1 {
+  font-size: 28px;
+  padding: 10px;
+}
+
+.col-100-green p {
+  padding-bottom: 30px;
+}
+
+[class^=col-25-green-] {
+  width: calc(25% - 2px);
+  padding: 20px 0 5px 0;
+  border: 1px solid #ffffff;
+  border-top: none;
+  border-left: none;
+}
+
+[class^=col-25-green-] h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.col-25-green-2 {
+  border-bottom: none;
+  margin-bottom: 100px;
+}
+
+.right-cell {
+  border-right: none;
+}
+
+#lower-title {
+  margin-top: 20px;
+}
+
+/* sezione 3 */
+.col-40-white-3 {
+  width: calc(40% - 50px);
+  padding: 20px 0 50px 70px;
+}
+
+.col-40-white-3 h1 {
+  font-size: 46px;
+  margin: 30px 0;
+}
+
+.col-40-white-3 p {
+  margin: 5px 0;
+}
+
+.col-60-white-3 {
+  width: calc(60% - 50px);
+  padding: 25px 0;
+}
+
+.col-60-white-3 img {
+  height: 15px;
+  width: auto;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+img.wider-logo-1 {
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+
+img.wider-logo-2 {
+  height: 40px;
+  position: relative;
+  top: 13px;
+}
+
+.col-40-white-4 {
+  width: 40%;
+}
+
+.col-40-white-4 h1 {
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.col-60-white-4 {
+  width: 60%;
+}
+
+.col-60-white-4 img {
+  float: right;
+  height: 350px;
+  width: auto;
+  text-align: right;
+}
+
+/* FOOTER */
