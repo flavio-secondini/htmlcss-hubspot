@@ -5,6 +5,7 @@
     <title>Hubspot</title>
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -14,10 +15,11 @@
         <div class="container-gray-fixed">
           <div class="row-fixed">
             <div class="col-50-fixed">
-              <select name="languages" class="dropdown-head">
-                <option value="english">English</option>
-                <option value="italian">Italiano</option>
-              </select>
+              <button class="dropdown-head">
+                <i class="fas fa-globe-europe"></i>
+                English
+                <i class="fas fa-angle-down"></i>
+              </button>
               <span class="fixed-head">Contact us</span>
             </div>
             <div class="col-50-fixed-right">
@@ -37,27 +39,19 @@
             <div class="col-50-navbar-right">
               <ul class="navlist">
                 <li>
-                  <select name="About">
-                    <option value="about">About</option>
-                  </select>
+                  <span>About</span>
                 </li>
                 <li>
                   <a href="https://www.google.com">Partners</a>
                 </li>
                 <li>
-                  <select name="resources">
-                    <option value="resources">Resources</option>
-                  </select>
+                  <span>Resources</span>
                 </li>
                 <li>
-                  <select name="pricing">
-                    <option value="pricing">Pricing</option>
-                  </select>
+                  <span>Pricing</span>
                 </li>
                 <li>
-                  <select name="software">
-                    <option value="software">Software</option>
-                  </select>
+                  <span>Software</span>
                 </li>
               </ul>
             </div>
@@ -242,11 +236,72 @@
     </main>
 
     <footer>
-      <section class="section-blue"></section>
+      <section class="section-blue">
+        <div class="row-blue">
+          <div class="col-25-blue">
+            <h3>increase your traffic</h3>
+            <p>ad software</p>
+            <p>blog software</p>
+            <p>SEO software</p>
+            <p>social media software</p>
+            <p>content management software</p>
+          </div>
+          <div class="col-25-blue">
+            <h3>connect with leads</h3>
+            <p>ad software</p>
+            <p>blog software</p>
+            <p>SEO software</p>
+            <p>social media software</p>
+            <p>content management software</p>
+          </div>
+          <div class="col-25-blue">
+            <h3>close and manage leads</h3>
+            <p>ad software</p>
+            <p>blog software</p>
+            <p>SEO software</p>
+            <p>social media software</p>
+            <p>content management software</p>
+          </div>
+          <div class="col-25-blue">
+            <h3>support and tools</h3>
+            <p>ad software</p>
+            <p>blog software</p>
+            <p>SEO software</p>
+            <p>social media software</p>
+            <p>content management software</p>
+            <button class="btn-footer">Contact HubSpot Support</button>
+            <ul>
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-linkedin-in"></i></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row-blue-2">
+          <div class="col-100-blue">
+            <span>English</span>
+            <span>Deutsch</span>
+            <span>日本人</span>
+            <span>Espa&#241;ol</span>
+            <span>Portugu&#234;s</span>
+            <span>Fran&#231;ais</span>
+          </div>
+        </div>
+        <hr>
+        <div class="row-blue-3">
+          <div class="col-50-blue-3">
+            <img class="hsg-deferred hsg-deferred-loaded" data-src="https://www.hubspot.com/hubfs/WBZ-1165%20Global%20Nav%20Redesign/Wordmark-White.svg" alt="HubSpot Logo" src="https://www.hubspot.com/hubfs/WBZ-1165%20Global%20Nav%20Redesign/Wordmark-White.svg" data-was-processed="true">
+            <p>Copyright © 2019 HubSpot, Inc.</p>
+          </div>
+          <div class="col-50-blue-3-right">
+            <span>legal stuff</span>
+            <span>privacy policy</span>
+          </div>
+        </div>
+      </section>
     </footer>
 
   </body>
 </html>
-<!-- NOTE: rivedi i tag select -->
-<!-- NOTE: aggiungi icona globo su head "English" -->
-<!-- NOTE: cambia font testo -->
